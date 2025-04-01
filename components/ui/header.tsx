@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Header() {
   const [showEnterButton, setShowEnterButton] = useState(false);
@@ -21,32 +22,28 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 w-full z-30 bg-black bg-opacity-5 backdrop-blur-md shadow-md transition-all duration-500"
+      className="fixed top-0 w-full z-30 bg-black/5 dark:bg-black/50 backdrop-blur-md shadow-md transition-all duration-500"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="relative flex items-center justify-center h-20 mt-4">
-          {/* Logo siempre visible y centrado */}
-          <Link href="/" aria-label="Cruip">
+        <div className="relative flex items-center justify-between h-20 mt-4">
+          {/* Espacio vacío a la izquierda para mantener el logo centrado */}
+          <div className="w-10"></div>
+
+          {/* Logo centrado */}
+          <Link href="/" aria-label="Cruip" className="flex-grow-0">
             <Image
-              src="/images/logo-dark.svg"
+              src="/images/ATOMIZE.svg"
               alt="Logo"
-              width={64}
-              height={64}
-              className="w-28 h-28"
+              width={32}
+              height={32}
+              className="w-20 h-20"
             />
           </Link>
 
-          {/* Botón Entrar visible al llegar a Features */}
-          {showEnterButton && (
-            <div className="absolute right-0 fade-in-animation">
-              <a
-                className="btn text-white bg-color3bs hover:bg-color3bsdarker"
-                href="https://academia.atomize.com"
-              >
-                Entrar
-              </a>
-            </div>
-          )}
+          {/* Toggle de tema a la derecha */}
+          <div className="flex items-center">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
 

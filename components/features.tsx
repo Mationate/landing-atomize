@@ -8,8 +8,8 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Qué encontrarás en esta plataforma</h2>
-            <p className="text-xl text-gray-400">Del corte al negocio, de la marca personal a crear tu propio camino.</p>
+            <h2 className="h3 mb-4">Nuestra Learning Experience Platform (LXP) te permitirá una experiencia de aprendizaje personalizada.</h2>
+            <p className="text-xl text-gray-400"> Se centra en el usuario y en motivarlo para que desarrolle las competencias deseadas.</p>
           </div>
 
           {/* Items */}

@@ -9,14 +9,18 @@ import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Pricing from '@/components/pricing'
 import FAQ from '@/components/faqq'
+import TraditionalTraining from '@/components/traditional-training'
+import PlatformBenefits from '@/components/platform-benefits'
+import AnimatedBanner from '@/components/animated-banner'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <TraditionalTraining />
       <Features />
-      <Zigzag />
-      <Pricing />
+      <PlatformBenefits />
+      <AnimatedBanner />
       <FAQ/>
       <Newsletter />
     </>

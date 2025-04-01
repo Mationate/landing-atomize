@@ -1,10 +1,10 @@
-import ModalVideo from '@/components/modal-video'
-import VideoThumb from '@/public/images/Fondo_video_Landing.png'
+import Image from 'next/image'
 import { CircleArrowDown } from 'lucide-react'
+import HeroImage from '@/public/images/hero.png'
 
 export default function Hero() {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
@@ -23,37 +23,47 @@ export default function Hero() {
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">DOMINA EL ARTE DE LA BARBERÍA CON 3BSLab</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-            Hemos creado una comunidad basada en el conocimiento, el aprendizaje y la experiencia,  para que puedas desarrollarte como Barbero y dominar las técnicas de corte, la redes sociales, el negocio de las Barberías; pero principalmente, crecer como persona.
-            </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-color3bs hover:bg-color3bsdarker w-full mb-4 sm:w-auto sm:mb-0" href="https://academia.3bslab.com">Entrar</a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600" className="flex items-center justify-center space-x-2 cursor-pointer">
-                <a className="text-white text-lg hover:underline ml-4" href="#features">
-                  Aprende más
-                </a>
-                <div className="flex flex-col items-center">
-                  <CircleArrowDown className='w-6 h-6 text-color3bs'/>
-
+          {/* Content con flexbox para texto e imagen uno al lado del otro */}
+          <div className="flex flex-col md:flex-row items-center md:space-x-8">
+            
+            {/* Columna de texto */}
+            <div className="md:w-2/5 text-center md:text-left mb-12 md:mb-0">
+              <h1 className="h1 mb-4" data-aos="fade-up">Transforma el aprendizaje en tu Organización!</h1>
+              <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+                Brindamos una experiencia de aprendizaje personalizada y centrada en el usuario, potenciando su desarrollo, acompañamiento y contenido de calidad de la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile.
+              </p>
+              <div className="sm:flex sm:justify-start">
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contact">Hablemos!</a>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="600" className="flex items-center space-x-2 cursor-pointer ml-0 sm:ml-4">
+                  <a className=" text-lg hover:underline" href="#features">
+                    Aprende más
+                  </a>
+                  <div className="flex flex-col items-center">
+                    <CircleArrowDown className='w-6 h-6 text-purple-600'/>
+                  </div>
                 </div>
               </div>
             </div>
+            
+            {/* Columna de imagen */}
+            <div className="md:w-3/5" data-aos="fade-up" data-aos-delay="200">
+              <div className="relative w-full h-full flex justify-center">
+                <Image
+                  src={HeroImage}
+                  alt="Hero illustration"
+                  width={800}
+                  height={650}
+                  className="w-full h-auto object-contain max-w-full"
+                  priority
+                />
+              </div>
+            </div>
+            
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="video thumbnail"
-             />
-
         </div>
-
       </div>
     </section>
   )
