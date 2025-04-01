@@ -41,7 +41,7 @@ export default function Header() {
             <div className="absolute right-0 fade-in-animation">
               <a
                 className="btn text-white bg-color3bs hover:bg-color3bsdarker"
-                href="https://academia.3bslab.com"
+                href="https://academia.atomize.com"
               >
                 Entrar
               </a>
