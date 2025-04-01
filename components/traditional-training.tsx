@@ -18,7 +18,7 @@ export default function TraditionalTraining() {
             {/* Columna 1 */}
             <div className="flex flex-col items-center text-center">
               <div className="w-20 h-20 mb-4 flex items-center justify-center rounded-full bg-gray-200">
-                <DollarSign className="w-10 h-10" />
+                <DollarSign className="text-black w-10 h-10" />
               </div>
               <h3 className="h3 mb-2">Costosa</h3>
               <p className="text-lg text-gray-400">
@@ -29,7 +29,7 @@ export default function TraditionalTraining() {
             {/* Columna 2 */}
             <div className="flex flex-col items-center text-center">
               <div className="w-20 h-20 mb-4 flex items-center justify-center rounded-full bg-gray-200">
-                <User className="w-10 h-10" />
+                <User className="text-black w-10 h-10" />
               </div>
               <h3 className="h3 mb-2">Poco personalizada</h3>
               <p className="text-lg text-gray-400">
@@ -40,7 +40,7 @@ export default function TraditionalTraining() {
             {/* Columna 3 */}
             <div className="flex flex-col items-center text-center">
               <div className="w-20 h-20 mb-4 flex items-center justify-center rounded-full bg-gray-200">
-                <BarChart3 className="w-10 h-10" />
+                <BarChart3 className="text-black w-10 h-10" />
               </div>
               <h3 className="h3 mb-2">Difícil de medir</h3>
               <p className="text-lg text-gray-400">
