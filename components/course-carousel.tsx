@@ -88,9 +88,9 @@ export default function CourseCarousel() {
   }, [])
 
   return (
-    <section className="py-16 overflow-hidden">
+    <section className="py-8 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white">Nuestros Cursos y Diplomados</h2>
+        <h2 className="text-3xl font-bold text-center ">Algunos de nuestros Cursos y programas</h2>
         
         {/* Contenedor principal del carrusel horizontal */}
         <div className="relative h-[800px] w-full flex justify-center items-center">

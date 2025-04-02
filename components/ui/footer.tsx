@@ -19,7 +19,12 @@ export default function Footer() {
                   <Image src="/images/ATOMIZE.svg" alt="Logo" width={32} height={32} className="w-28 h-28 fill-current" />
                 </Link>
               </div>
-              <div className="text-gray-400">Creamos una comunidad para compartir nuestro conocimiento y experiencia, para que muchas personas puedan crear su propio camino.</div>
+              <div className="text-gray-700 dark:text-gray-300 text-bold">Empieza hoy a transformar la capacitación en tu empresa!!
+
+</div>
+<div className="text-gray-600 dark:text-gray-300">Capacitación personalizada, flexible y efectiva.
+Contenido validado por la Universidad de Chile.
+Reportes avanzados y seguimiento automatizado.</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}

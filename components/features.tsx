@@ -10,6 +10,7 @@ export default function Features() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h3 mb-4">Nuestra Learning Experience Platform (LXP) te permitirá una experiencia de aprendizaje personalizada.</h2>
             <p className="text-xl text-gray-400"> Se centra en el usuario y en motivarlo para que desarrolle las competencias deseadas.</p>
+            <p className="h3 text-gray-800 text-center mt-12">Nuestra plataforma LXP permite:</p>
           </div>
 
           {/* Items */}
@@ -23,8 +24,8 @@ export default function Features() {
                 <path className="stroke-current text-white" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-gray-400" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
               </svg> */}
-              <h4 className="h4 mb-2">Experiencia</h4>
-              <p className="text-lg text-gray-400 text-center">Hemos creado y formado personas en diferentes países, en base a la experiencia propia tranferimos ese proceso para que tu puedas aprovecharlo.</p>
+              {/* <h4 className="h4 mb-2">Experiencia</h4> */}
+              <p className="text-lg text-gray-400 text-center">Acceso centralizado y personalizado: Cada empresa tiene su propia plataforma.</p>
             </div>
 
             {/* 2nd item */}
@@ -35,8 +36,8 @@ export default function Features() {
                 <path className="stroke-current text-white" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-gray-400" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg> */}
-              <h4 className="h4 mb-2">Conocimiento</h4>
-              <p className="text-lg text-gray-400 text-center">Aprender es una decisión de crecimiento personal para lograr tus metas. Te entregamos conocimiento para que puedas desarrollar tu propio camino.</p>
+              {/* <h4 className="h4 mb-2">Conocimiento</h4> */}
+              <p className="text-lg text-gray-400 text-center">Imagen corporativa y contenidos a la medida: Formación alineada con los intereses de la empresa.</p>
             </div>
 
             {/* 3rd item */}
@@ -50,8 +51,8 @@ export default function Features() {
                   <circle className="stroke-current text-white" cx="11" cy="11" r="11" />
                 </g>
               </svg> */}
-              <h4 className="h4 mb-2">Aprendizaje</h4>
-              <p className="text-lg text-gray-400 text-center">Programas de formación integral en áreas de la Barbería y otras áreas del Servicio a las Personas. Tenemos para ti contenido básico y avanzado, desde el corte hasta la creación de tu propio negocio y mucho más.</p>
+              {/* <h4 className="h4 mb-2">Aprendizaje</h4> */}
+              <p className="text-lg text-gray-400 text-center">Formatos atractivos y flexibles: Microlearning, videos, infografías, foros, quizzes y evaluaciones de diagnóstico y  finales.</p>
             </div>
 
             {/* 4th item */}
@@ -64,8 +65,8 @@ export default function Features() {
                   <circle className="stroke-current text-gray-400" cx="13" cy="9" r="3" />
                 </g>
               </svg> */}
-              <h4 className="h4 mb-2">Contenido exclusivo</h4>
-              <p className="text-lg text-gray-400 text-center">Todas las semanas agregamos nuevo contenido para que puedas ir desarrollándote como un profesional de la Barbería, a través de Podcasts, Streamings, demostraciones en vivo y entrevistas.</p>
+              {/* <h4 className="h4 mb-2">Contenido exclusivo</h4> */}
+              <p className="text-lg text-gray-400 text-center">Certificación digital: Validación del conocimiento adquirido.</p>
             </div>
 
             {/* 5th item */}
@@ -78,8 +79,8 @@ export default function Features() {
                   <path className="stroke-current text-gray-400" d="M22 30h4v12h-4z" />
                 </g>
               </svg> */}
-              <h4 className="h4 mb-2">Comunidad</h4>
-              <p className="text-lg text-gray-400 text-center">Te invitamos a ser parte de una comunidad de conocimiento y aprendizaje. Creamos procesos donde podrás participar, mostrar lo que haces y aprender de otros que están igual que tu o que han avanzado en diferentes aspectos del mundo de la Barbería.</p>
+              {/* <h4 className="h4 mb-2">Comunidad</h4> */}
+              <p className="text-lg text-gray-400 text-center">Reportería avanzada: Análisis en tiempo real por área, equipo y colaborador.</p>
             </div>
 
             {/* 6th item */}
@@ -93,8 +94,8 @@ export default function Features() {
                   <path className="stroke-current text-white" d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948" />
                 </g>
               </svg> */}
-              <h4 className="h4 mb-2">Desafíos</h4>
-              <p className="text-lg text-gray-400 text-center">Hemos diseñado espacios para compartir desafíos personales y profesionales. Queremos que muestres tus talentos y tu arte. Recibe feedback participando en  nuestros Barber Talent!.</p>
+              {/* <h4 className="h4 mb-2">Desafíos</h4> */}
+              <p className="text-lg text-gray-400 text-center">Automatización y seguimiento: Alertas y recordatorios para garantizar el avance en el aprendizaje.</p>
             </div>
 
           </div>

@@ -60,12 +60,14 @@ export default function FAQ() {
     {
       id: 1,
       question: '¿Cómo sé si esta plataforma es para mi Organización?',
-      answer: 'Si buscas una solución personalizada, escalable, con reportes detallados y contenido desarrollado por la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile esta es la mejor opción.'
+      answer: 'Si buscas una solución personalizada, escalable, con reportes detallados y contenido desarrollado por la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile esta es la mejor opción.',
+      hasCheckIcon: true
     },
     {
       id: 2,
       question: '¿Cómo se personaliza la plataforma?',
-      answer: 'Se adapta con tu imagen corporativa, acceso exclusivo y selección de contenidos alineados con tu estrategia de capacitación. Tenemos contenidos que sabemos que te servirán, pero si quieres crear otros, los podemos diseñar e implementar.'
+      answer: 'Se adapta con tu imagen corporativa, acceso exclusivo y selección de contenidos alineados con tu estrategia de capacitación. Tenemos contenidos que sabemos que te servirán, pero si quieres crear otros, los podemos diseñar e implementar.',
+      hasCheckIcon: true
     },
     {
       id: 3,

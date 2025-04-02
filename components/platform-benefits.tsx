@@ -73,37 +73,37 @@ const BenefitCard = ({ title, description, image, bgColor }: BenefitCardProps) =
 // Datos de ejemplo para las tarjetas
 const benefitsData: BenefitCardProps[] = [
   {
-    title: 'Patrocinios y publicidad',
+    title: 'Centralizado',
     description: 'Centraliza todos los recursos de aprendizaje en un solo lugar',
     image: '/images/1.png',
     bgColor: '#FFE135', // Amarillo
   },
   {
-    title: 'Marketing de afiliación',
+    title: 'Personalizado',
     description: 'Permite personalizar el aprendizaje, al definir rutas de aprendizaje  por colaborador, Areas o unidades.',
     image: '/images/2.png',
     bgColor: '#E67E22', // Naranja
   },
   {
-    title: 'Eventos en línea',
+    title: 'Múltiples fuentes de Contenido',
     description: 'Permite crear y cargar contenidos propios y cargar data de fuentes externas para tener el control de toda la información de desarrollo formativo.',
     image: '/images/3.png',
     bgColor: '#7CFC00', // Verde brillante
   },
   {
-    title: 'Donaciones o propinas',
+    title: 'Data para analizar',
     description: 'Proporciona información para tomar decisiones sobre las personas de la organización',
     image: '/images/4.png',
     bgColor: '#FF69B4', // Rosa
   },
   {
-    title: 'Suscripciones',
+    title: 'Feedback',
     description: 'Puede utilizarse para dar feedback o brindar motivación para el desarrollo personal',
     image: '/images/5.png',
     bgColor: '#4169E1', // Azul real
   },
   {
-    title: 'Ventas de "Pago por ver"',
+    title: 'Crear funcionalidades',
     description: 'Crear nuevas funcionalidades de acuerdo a tus necesidades.',
     image: '/images/6.png',
     bgColor: '#FF4500', // Rojo-naranja
