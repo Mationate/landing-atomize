@@ -15,7 +15,7 @@ export default function Newsletter() {
       if (err) {
         toast.error('Hubo un error al suscribirse.');
       } else {
-        toast.success('¡Gracias por unirte a 3BSLab! 💈');
+        toast.success('¡Gracias por interesarte en Atomize!');
       }
     });
   };

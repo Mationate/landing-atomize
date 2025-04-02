@@ -74,52 +74,40 @@ const BenefitCard = ({ title, description, image, bgColor }: BenefitCardProps) =
 const benefitsData: BenefitCardProps[] = [
   {
     title: 'Patrocinios y publicidad',
-    description: 'Conecta con marcas y crea colaboraciones publicitarias efectivas.',
-    image: '/images/4.png',
+    description: 'Centraliza todos los recursos de aprendizaje en un solo lugar',
+    image: '/images/1.png',
     bgColor: '#FFE135', // Amarillo
   },
   {
     title: 'Marketing de afiliación',
-    description: 'Genera ingresos recomendando productos y servicios a tu audiencia.',
-    image: '/images/9.png',
+    description: 'Permite personalizar el aprendizaje, al definir rutas de aprendizaje  por colaborador, Areas o unidades.',
+    image: '/images/2.png',
     bgColor: '#E67E22', // Naranja
   },
   {
     title: 'Eventos en línea',
-    description: 'Pagos por transmisiones en vivo, eventos virtuales o consultas personalizadas. Ejemplos: Zoom, YouTube, y Instagram Live.',
-    image: '/images/16.png',
+    description: 'Permite crear y cargar contenidos propios y cargar data de fuentes externas para tener el control de toda la información de desarrollo formativo.',
+    image: '/images/3.png',
     bgColor: '#7CFC00', // Verde brillante
   },
   {
     title: 'Donaciones o propinas',
-    description: 'Recibe el apoyo directo de tu comunidad a través de contribuciones voluntarias.',
-    image: '/images/19.png',
+    description: 'Proporciona información para tomar decisiones sobre las personas de la organización',
+    image: '/images/4.png',
     bgColor: '#FF69B4', // Rosa
   },
   {
     title: 'Suscripciones',
-    description: 'Ofrece contenido premium mediante un modelo de suscripción recurrente.',
-    image: '/images/5a.png',
+    description: 'Puede utilizarse para dar feedback o brindar motivación para el desarrollo personal',
+    image: '/images/5.png',
     bgColor: '#4169E1', // Azul real
   },
   {
     title: 'Ventas de "Pago por ver"',
-    description: 'Monetiza contenido exclusivo con acceso único mediante pago.',
-    image: '/images/4.png',
+    description: 'Crear nuevas funcionalidades de acuerdo a tus necesidades.',
+    image: '/images/6.png',
     bgColor: '#FF4500', // Rojo-naranja
   },
-  {
-    title: 'Comisiones',
-    description: 'Gana un porcentaje por cada venta que generes a través de tus recomendaciones.',
-    image: '/images/16.png',
-    bgColor: '#40E0D0', // Turquesa
-  },
-  {
-    title: 'Ventas de productos propios',
-    description: 'Comercializa tus propios productos físicos o digitales directamente a tu audiencia.',
-    image: '/images/19.png',
-    bgColor: '#FF6347', // Tomate
-  }
 ]
 
 export default function PlatformBenefits() {
@@ -134,7 +122,7 @@ export default function PlatformBenefits() {
           </div>
 
           {/* Grilla de tarjetas */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefitsData.map((benefit, index) => (
               <BenefitCard
                 key={index}

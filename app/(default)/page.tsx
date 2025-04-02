@@ -1,6 +1,6 @@
 export const metadata = {
-  title: '3BSLab - Aprende, Aplica y Triunfa',
-  description: 'Plataforma de aprendizaje y experiencia. Queremos que descubras, aprendas, apliques y triunfes en el mundo de la Barbería - Te ayudamos más allá del corte!!',
+  title: 'Atomize - Educación personalizada',
+  description: 'Plataforma de aprendizaje y experiencia',
 };
 
 import Hero from '@/components/hero'
@@ -12,6 +12,7 @@ import FAQ from '@/components/faqq'
 import TraditionalTraining from '@/components/traditional-training'
 import PlatformBenefits from '@/components/platform-benefits'
 import AnimatedBanner from '@/components/animated-banner'
+import CourseCarousel from '@/components/course-carousel'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <TraditionalTraining />
       <Features />
       <PlatformBenefits />
+      <CourseCarousel />
       <AnimatedBanner />
       <FAQ/>
       <Newsletter />
