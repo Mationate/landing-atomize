@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
     // Enviamos correo al administrador
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'noreply@atomize.cl',
       to: 'contacto@atomize.cl',
       subject: 'Nuevo mensaje de contacto - Atomize',
       html: `
@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     
     // Enviamos correo de confirmación al usuario
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'onboarding@atomize.cl',
       to: email,
       subject: 'Gracias por contactar con Atomize',
       html: `
