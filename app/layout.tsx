@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 tracking-tight`}>
       <ThemeProvider
         attribute="class"
-        defaultTheme="dark"
+        defaultTheme="light"
         enableSystem
         disableTransitionOnChange
       >
