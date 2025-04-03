@@ -26,6 +26,7 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-toastify": "^10.0.5",
+    "resend": "^4.2.0",
     "tailwind-merge": "^2.5.2",
     "typescript": "^5.3.3"
   },

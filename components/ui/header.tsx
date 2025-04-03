@@ -25,7 +25,7 @@ export default function Header() {
       className="fixed top-0 w-full z-30 bg-black/5 dark:bg-black/50 backdrop-blur-md shadow-md transition-all duration-500"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="relative flex items-center justify-between h-20 mt-4">
+        <div className="relative flex items-center justify-between h-20 my-2">
           {/* Espacio vacío a la izquierda para mantener el logo centrado */}
           <div className="w-10"></div>
 

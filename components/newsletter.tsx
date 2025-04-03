@@ -1,30 +1,55 @@
 "use client"
 
 import { useState } from "react";
-import {  toast } from 'react-toastify';
-
-import jsonp from 'jsonp';
-
+import { toast } from 'react-toastify';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const url = 'https://3bslab.us18.list-manage.com/subscribe/post?u=b15e5abb2a0f771d6db505042&id=9f3f7eafd2';
-    jsonp(`${url}&EMAIL=${email}`, { param: 'c' }, (err, data) => {
-      if (err) {
-        toast.error('Hubo un error al suscribirse.');
+    
+    if (!email || !message) {
+      toast.error('Por favor ingresa tu correo y mensaje.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, message }),
+      });
+
+      const data = await response.json();
+      
+      if (response.ok) {
+        toast.success('¡Gracias por contactarnos! Te responderemos pronto.');
+        setEmail('');
+        setMessage('');
       } else {
-        toast.success('¡Gracias por interesarte en Atomize!');
+        throw new Error(data.error || 'Error al enviar el mensaje');
       }
-    });
+    } catch (error) {
+      console.error('Error al enviar el correo:', error);
+      toast.error('Hubo un error al enviar tu mensaje. Por favor intenta nuevamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   return ( 
-    <section>
+    <section id="contact">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CTA box */}
-        <div className="relative bg-color3bs py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
+        <div className="relative bg-blue-600 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
 
           {/* Background illustration */}
           <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
@@ -43,18 +68,41 @@ export default function Newsletter() {
 
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-              <h3 className="h3 text-white mb-2">Quieres saber más?</h3>
-              <p className="text-white text-lg">Registrate con tu mail y te mantendremos informado de las últimas novedades de Atomize</p>
+              <h3 className="h3 text-white mb-2">¿Quieres saber más?</h3>
+              <p className="text-white text-lg">Contáctanos y te responderemos a la brevedad</p>
             </div>
 
             {/* CTA form */}
-            <form method="POST" className="w-full lg:w-1/2" onSubmit={onSubmit}>
-              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input name="EMAIL" type="email" required onChange={(e)=> setEmail(e.target.value)} className="w-full appearance-none bg-color3bsdarker border border-color3bs focus:border-white rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-white" placeholder="Escribe tu correo…" aria-label="Escribe tu correo…" />
-                <button type="submit" className=" text-color3bs bg-white hover:bg-purple-100 shadow px-4">Enviar</button>
+            <form className="w-full lg:w-1/2" onSubmit={onSubmit}>
+              <div className="flex flex-col max-w-xs mx-auto sm:max-w-md lg:max-w-none">
+                <input 
+                  type="email" 
+                  name="email"
+                  value={email}
+                  required 
+                  onChange={(e) => setEmail(e.target.value)} 
+                  className="w-full appearance-none bg-blue-700 border border-blue-500 focus:border-white rounded-sm px-4 py-3 mb-2 text-white placeholder-white" 
+                  placeholder="Tu correo electrónico" 
+                  aria-label="Tu correo electrónico" 
+                />
+                <textarea 
+                  name="message"
+                  value={message}
+                  required
+                  onChange={(e) => setMessage(e.target.value)} 
+                  className="w-full appearance-none bg-blue-700 border border-blue-500 focus:border-white rounded-sm px-4 py-3 mb-2 text-white placeholder-white" 
+                  placeholder="Tu mensaje" 
+                  aria-label="Tu mensaje"
+                  rows={4}
+                />
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="text-blue-600 bg-white hover:bg-purple-100 shadow px-4 py-2 mt-2 font-medium"
+                >
+                  {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+                </button>
               </div>
-              {/* Success message */}
-              {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Estamos en contacto!</p> */}
             </form>
 
           </div>

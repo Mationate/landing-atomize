@@ -10,7 +10,7 @@ export default function Features() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h3 mb-4">Nuestra Learning Experience Platform (LXP) te permitirá una experiencia de aprendizaje personalizada.</h2>
             <p className="text-xl text-gray-400"> Se centra en el usuario y en motivarlo para que desarrolle las competencias deseadas.</p>
-            <p className="h3 text-gray-800 text-center mt-12">Nuestra plataforma LXP permite:</p>
+            <p className="h3 text-gray-300 dark:text-gray-300 text-center mt-12">Nuestra plataforma LXP permite:</p>
           </div>
 
           {/* Items */}
@@ -18,7 +18,7 @@ export default function Features() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-            <Sparkles className="w-16 h-16 mb-4 text-color3bs"/>
+            <Sparkles className="w-16 h-16 mb-4 text-blue-600"/>
               {/* <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-color3bs" width="64" height="64" rx="32" />
                 <path className="stroke-current text-white" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd" />
@@ -30,7 +30,7 @@ export default function Features() {
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
-            <Brain className="w-16 h-16 mb-4 text-color3bs"/>
+            <Brain className="w-16 h-16 mb-4 text-blue-600"/>
               {/* <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <circle className="fill-current text-color3bs" cx="32" cy="32" r="32" />
                 <path className="stroke-current text-white" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
@@ -42,7 +42,7 @@ export default function Features() {
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
-            <BookOpenText className="w-16 h-16 mb-4 text-color3bs"/>
+            <BookOpenText className="w-16 h-16 mb-4 text-blue-600"/>
               {/* <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-color3bs" width="64" height="64" rx="32" />
                 <g transform="translate(21 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
@@ -57,7 +57,7 @@ export default function Features() {
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-blocks]">
-              <EarthLock className="w-16 h-16 mb-4 text-color3bs"/>
+              <EarthLock className="w-16 h-16 mb-4 text-blue-600"/>
               {/* <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-color3bs" width="64" height="64" rx="32" />
                 <g transform="translate(22 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
@@ -71,7 +71,7 @@ export default function Features() {
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
-            <HandHeart className="w-16 h-16 mb-4 text-color3bs" />
+            <HandHeart className="w-16 h-16 mb-4 text-blue-600" />
               {/* <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-color3bs" width="64" height="64" rx="32" />
                 <g strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
@@ -85,7 +85,7 @@ export default function Features() {
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <Goal className="w-16 h-16 mb-4 text-color3bs" />
+              <Goal className="w-16 h-16 mb-4 text-blue-600" />
               {/* <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-color3bs" width="64" height="64" rx="32" />
                 <g transform="translate(21 22)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">

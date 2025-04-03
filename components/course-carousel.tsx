@@ -236,7 +236,7 @@ export default function CourseCarousel() {
               <button
                 key={index}
                 className={`w-2 h-2 rounded-full transition-all ${
-                  index === activeIndex ? 'bg-purple-600 w-5' : 'bg-gray-600'
+                  index === activeIndex ? 'bg-blue-600 w-5' : 'bg-gray-600'
                 }`}
                 onClick={() => setActiveIndex(index)}
                 aria-label={`Ir al curso ${index + 1}`}
